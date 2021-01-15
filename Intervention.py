@@ -193,7 +193,7 @@ rfe_feature = X.loc[:,rfe_support].columns.tolist()
 print(str(len(rfe_feature)), 'selected features')
 score_rfe_selector = rfe_selector.estimator_.coef_
 
-##### LASSO ####
+##### Ridge ####
 embedded_lr_selector = SelectFromModel(LogisticRegression(penalty = 'l2'), max_features = 30)
 embedded_lr_selector.fit(X_norm, Y)
 embedded_lr_support = embedded_lr_selector.get_support()
