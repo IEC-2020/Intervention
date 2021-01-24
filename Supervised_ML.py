@@ -13,12 +13,10 @@ logreg = LogisticRegression()       Link: https://scikit-learn.org/stable/module
 logreg.fit(X_train, y_train)
 y_pred = logreg.predict(X_test)
 print('Accuracy of logistic regression classifier on test set: {:.2f}'.format(logreg.score(X_test, y_test)))
-from sklearn.metrics import confusion_matrix
-confusion_matrix = confusion_matrix(y_test, y_pred)
-print(confusion_matrix)
-from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix , classification_report
+print(confusion_matrix(y_test, y_pred))
+print("\n")
 print(classification_report(y_test, y_pred))
-
 ##########################################    Naïve Bayes.     ######################################################
 from sklearn.naive_bayes import GaussianNB
 gnb = GaussianNB()              Link: https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB
