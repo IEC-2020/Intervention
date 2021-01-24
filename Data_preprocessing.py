@@ -40,9 +40,8 @@ X.to_excel('X.xlsx')
 #HANDLING MISSING DATA####
 from sklearn.impute import SimpleImputer 
 X = pd.read_excel('X_before_preprocessing.xlsx')
-impute= SimpleImputer(missing_values = np.nan, strategy='mean')
-impute.fit(X)
-X = impute.transform(X)
+impute= SimpleImputer(missing_values = np.nan, strategy='mean').fit(X)
+X = pd.Dataframe(impute.fit(X).transform(X), columns=X.columns)
 print(X)
 
 #FEATURE SCALING####
