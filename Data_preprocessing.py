@@ -48,7 +48,7 @@ print(X)
 #FEATURE SCALING####
 from sklearn.preprocessing import Normalizer
 transformer = Normalizer().fit(X)
-transformer
-X = transformer.transform(X)
-X=pd.DataFrame(data=X)
+X_norm = pd.DataFrame(transformer.fit(X).transform(X), columns = X.columns)
+##check##
+X=X_norm
 X.to_excel('X.xlsx')
