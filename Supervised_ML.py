@@ -79,7 +79,15 @@ confusion_matrix = confusion_matrix(y_test, y_pred)
 print(confusion_matrix)
 from sklearn.metrics import classification_report
 print(classification_report(y_test, y_pred))
+########################################## Stochastic Gradient Descent ##################################################
+from sklearn.linear_model import SGDClassifier
+from sklearn.pipeline import make_pipeline
+clf =make_pipeline(SGDClassifier())
+clf.fit(X_train,y_train)
+sgd_pred = clf.predict(X_test)
 
+from sklearn import metrics
+print("Accuracy:",metrics.accuracy_score(y_test, sgd_pred))
 ########################################## Support Vector Machine. ##################################################
 from sklearn import svm
 clf = svm.SVC(kernel='linear')          Link: https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC
