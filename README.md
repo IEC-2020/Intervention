@@ -12,7 +12,7 @@ MacOS Big Sur Version 11.2.3:
 A CPU was used with specification as following: Intel Core i9 2,4 GHz 8-Core with memory: 64 GB 2667 MHz DDR4.
 Microsoft Windows 10 Pro:
 A CPU was used with specification as following: Intel(R) Core(TM) i5-4590, 3.30GHz, 3301 MHz with memory: 8 GB.
-Linux Ubuntu:
+Linux Ubuntu version 18.04 LTS:
 A CPU was used with specification as following: Intel® CoreTM i7-6800K, 3.40GHz x 12 with 62.8GB memory, disk 424.6GB and OS type 64-bit. 
 
 # Platform used
