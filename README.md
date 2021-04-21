@@ -8,11 +8,11 @@ Obesity is accompanied by behavioural disorders and exercise, dietary adjustment
 We aimed to investigate whether FGF21 can endure as a predicted biomarker in mice after counteracting obesity. This code provides an insight overview of the machine learning section.
 
 # Workspace
-MacOS Big Sur Version 11.2.3
+MacOS Big Sur Version 11.2.3:
 A CPU was used with specification as following: Intel Core i9 2,4 GHz 8-Core with memory: 64 GB 2667 MHz DDR4.
-Microsoft Windows 10 Pro
+Microsoft Windows 10 Pro:
 A CPU was used with specification as following: Intel(R) Core(TM) i5-4590, 3.30GHz, 3301 MHz with memory: 8 GB.
-Linux Ubuntu
+Linux Ubuntu:
 A CPU was used with specification as following: Intel® CoreTM i7-6800K, 3.40GHz x 12 with 62.8GB memory, disk 424.6GB and OS type 64-bit. 
 
 # Platform used
