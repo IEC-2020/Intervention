@@ -29,7 +29,9 @@ https://www.anaconda.com/products/individual
 
 # 1st Task: Stratification from the parent data set
 Input: 01_FGF21_parent_dataset.xlsx
+
 Code: 01_data_management.py
+
 Output: 02_Stratified_imputated_data.xlsx
 
 # 2nd Task: Dimensionality reduction with Pearson's Correlation and PCA
