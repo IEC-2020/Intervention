@@ -13,7 +13,7 @@ import seaborn as sns
 
 
 #Load the Dataset#
-dataset = pd.read_excel('02_FGF21_Stratified_Imputation.xlsx')
+dataset = pd.read_excel('02_Stratified_imputated_data.xlsx')
 
 #Split the dataset#
 Y= dataset.iloc[:, 0:1].values
@@ -42,9 +42,9 @@ finalDf.to_excel('final_PCA.xlsx')
 
 fig = plt.figure(figsize = (8,8))
 ax = fig.add_subplot(1,1,1) 
-ax.set_xlabel('Principal Component 1', fontsize = 15)
-ax.set_ylabel('Principal Component 2', fontsize = 15)
-ax.set_title('2 component PCA', fontsize = 20)
+ax.set_xlabel('Principal Component 1 (74.68 %)', fontsize = 15)
+ax.set_ylabel('Principal Component 2 (10.40 %)', fontsize = 15)
+ax.set_title('', fontsize = 20)
 colors = ['r','g','b','c','m','y']
 for target, color in zip(list(finalDf[0].unique()),colors):
     
@@ -67,8 +67,8 @@ finalDf.to_excel('finalDf.xlsx')
 
 fig = plt.figure(figsize = (8,8))
 ax = fig.add_subplot(1,1,1) 
-ax.set_xlabel('Principal Component 1', fontsize = 15)
-ax.set_ylabel('Principal Component 2', fontsize = 15)
+ax.set_xlabel('Principal Component 1 (74.68 %)', fontsize = 15)
+ax.set_ylabel('Principal Component 2 (10.40 %)', fontsize = 15)
 ax.set_title('2 component PCA', fontsize = 20)
 colors = ['r','g','b','c','m','y']
 # lenfinalDf["principal component 1"]

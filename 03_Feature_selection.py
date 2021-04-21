@@ -6,7 +6,6 @@ from sklearn.feature_selection import SelectFromModel
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import chi2
 from sklearn.feature_selection import RFE
-from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.linear_model import Ridge
 from sklearn.datasets import make_friedman1
@@ -16,7 +15,7 @@ import pandas as pd
 
 #### Load the dataset####
 #Load the Dataset#
-dataset = pd.read_excel('02_FGF21_Stratified_Imputation.xlsx')
+dataset = pd.read_excel('02_Stratified_imputated_data.xlsx')
 
 #Split the dataset#
 Y= dataset.iloc[:, 0:1].values

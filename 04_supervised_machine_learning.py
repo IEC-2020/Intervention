@@ -32,7 +32,7 @@ from sklearn.metrics import classification_report
 from statistics import mean, stdev 
 
 # Load the Dataset#
-df_imputed = pd.read_excel("02_FGF21_Stratified_Imputation.xlsx")
+df_imputed = pd.read_excel("02_Stratified_imputated_data.xlsx")
 
 ###############################################################################################################################
 ############################################################### Features Preprocessing ########################################
@@ -47,6 +47,8 @@ y_test = pd.DataFrame(y_test)
 print('After Stratify Parameter is used ')
 print(y_train[0].value_counts())
 print(y_test[0].value_counts())
+
+##### Feature scaling #######
 scaler = StandardScaler()
 scaler.fit(X_train)
 X_train = scaler.transform(X_train)
