@@ -39,11 +39,11 @@ Input: 02_Stratified_imputated_data.xlsx
 
 Code: 02_PCA_and_Pearson.py
 
-Output: 02_result_PCA_data.xlsx
-        02_result_Pearson_Correlation_data.xlsx
-        02_result_PCA_with_index.png
-        02_result_PCA_without_index.png
-        02_result_Pearson_Correlation.png
+Output: 02_result_PCA_data.xlsx ,
+        02_result_Pearson_Correlation_data.xlsx ,
+        02_result_PCA_with_index.png ,
+        02_result_PCA_without_index.png ,
+        02_result_Pearson_Correlation.png ,
 
 # 3rd Task: Feature selection
 Input: 02_Stratified_imputated_data.xlsx
