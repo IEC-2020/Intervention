@@ -1,7 +1,71 @@
 # Fibroblast growth factor 21 as a putative Biomarker for behavioural dysfunction in obese mice
 @ Created by Dr. Alisha Parveen
 
-# INTRODUCTION
-To investigate and evaluate FGF21 as a Biomarker in Intervention condition. An advanced learning appraoch have been applied known as Machine learning (ML). ML are able to improve prediction accuracy by discovering relevant features of high complexity 32. In this study, we foresee the weighted features by using three different feature selection (FS) algorithms which eliminate irrelevant or redundant features from the original data set. Accordingly, informative features remain which in turn might indicate their biological importance. However, regarding smaller data sets with mouse studies, the repetition of experiments is low and group size is limited. Therefore, applied models are often prone to biasing issues due to the small sample size. To target the problem at hand, we applied multiple classification models to ensure validation by quantity. The novelty of this study is to use the combination of ML method with FS which is considered as an additional tool, and statistical methods on a small data set of behavioural-physiological parameters for determining whether FGF21 can endure as a biomarker after tackling obesity in mice.
+# Abstract
+Obesity is accompanied by behavioural disorders and exercise, dietary adjustments, or time-restricted feeding are to date the only successful long-term interventions. By restoring the balance between disturbed energy dissipation and energy intake, Fibroblast Growth Factor 21 (FGF21) is intricately connected to nutritional regulation. The purpose of the study was to assess through behavioural parameters, whether FGF21 can endure as a biomarker after tackling obesity. Therefore, after establishing a diet-induced obesity model, mice underwent an intervention strategy with either a dietary change, treadmill exercise, and time restricted feeding. In this study, we showed that the combination of dietary change with treadmill exercise resulted in body weight reduction, improved behavioural parameters, and lowest FGF21 concentrations. Furthermore, feature selection algorithms revealed five highly weighted features including FGF21 and body weight. Conclusively, we suggest from the different analysis procedure that FGF21 can be considered as a potential biomarker as it endures after the intervention.
+
+# Main task
+We aimed to investigate whether FGF21 can endure as a predicted biomarker in mice after counteracting obesity. This code provides an insight overview of the machine learning section.
+
+# Workspace
+MacOS Big Sur Version 11.2.3:
+A CPU was used with specification as following: Intel Core i9 2,4 GHz 8-Core with memory: 64 GB 2667 MHz DDR4.
+Microsoft Windows 10 Pro:
+A CPU was used with specification as following: Intel(R) Core(TM) i5-4590, 3.30GHz, 3301 MHz with memory: 8 GB.
+Linux Ubuntu:
+A CPU was used with specification as following: Intel® CoreTM i7-6800K, 3.40GHz x 12 with 62.8GB memory, disk 424.6GB and OS type 64-bit. 
+
+# Platform used
+MacOS Big Sur Version 11.2.3
+Python 3.8.3 with Spyder 4.2.0 Python IDE
+
+Microsoft Windows 10 Pro and Linux Ubuntu
+Python 3.7 with Spyder 4.0.1 Python IDE
+
+# Installation
+Python was installed via Anaconda3
+https://www.anaconda.com/products/individual
 
 
+# 1st Task: Stratification from the parent data set
+Input: 01_FGF21_parent_dataset.xlsx
+
+Code: 01_data_management.py
+
+Output: 02_Stratified_imputated_data.xlsx
+
+# 2nd Task: Dimensionality reduction with Pearson's Correlation and PCA
+Input: 02_Stratified_imputated_data.xlsx
+
+Code: 02_PCA_and_Pearson.py
+
+Output: 02_result_PCA_data.xlsx ,
+        02_result_Pearson_Correlation_data.xlsx ,
+        02_result_PCA_with_index.png ,
+        02_result_PCA_without_index.png ,
+        02_result_Pearson_Correlation.png 
+
+# 3rd Task: Feature selection
+Input: 02_Stratified_imputated_data.xlsx
+
+Code: 03_Feature_selection.py
+
+Output: Console
+
+# 4th Task: Supervised machine learning
+non-feature selected data set
+
+Input: 02_Stratified_imputated_data.xlsx
+
+Code: 04_supervised_machine_learning.py
+
+Output: Console
+
+
+feature selected data set
+
+Input: 04_common_Feature_selection_data.xlsx
+
+Code: 04_supervised_machine_learning.py
+
+Output: Console
