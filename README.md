@@ -36,7 +36,9 @@ Output: 02_Stratified_imputated_data.xlsx
 
 # 2nd Task: Dimensionality reduction with Pearson's Correlation and PCA
 Input: 02_Stratified_imputated_data.xlsx
+
 Code: 02_PCA_and_Pearson.py
+
 Output: 02_result_PCA_data.xlsx
         02_result_Pearson_Correlation_data.xlsx
         02_result_PCA_with_index.png
@@ -45,16 +47,25 @@ Output: 02_result_PCA_data.xlsx
 
 # 3rd Task: Feature selection
 Input: 02_Stratified_imputated_data.xlsx
+
 Code: 03_Feature_selection.py
+
 Output: Console
 
 # 4th Task: Supervised machine learning
 non-feature selected data set
+
 Input: 02_Stratified_imputated_data.xlsx
+
 Code: 04_supervised_machine_learning.py
+
 Output: Console
 
+
 feature selected data set
+
 Input: 04_common_Feature_selection_data.xlsx
+
 Code: 04_supervised_machine_learning.py
+
 Output: Console
