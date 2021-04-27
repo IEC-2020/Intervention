@@ -36,7 +36,7 @@ Code: 01_data_management.py
 
 Output: 02_Stratified_imputated_data.xlsx
 
-# 2nd Task: Dimensionality reduction with Pearson's Correlation and PCA
+# 2nd Task: Pearson's Correlation and PCA
 Input: 02_Stratified_imputated_data.xlsx
 
 Code: 02_PCA_and_Pearson.py
