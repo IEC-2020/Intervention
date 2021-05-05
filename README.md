@@ -1,4 +1,4 @@
-# Fibroblast growth factor 21 as a putative Biomarker for behavioural dysfunction in obese mice
+# Fibroblast Growth Factor 21 as a putative Biomarker for behavioural dysfunction in obese mice
 @ Created by Dr. Alisha Parveen
 
 # Abstract
